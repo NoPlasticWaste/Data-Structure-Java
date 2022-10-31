@@ -43,12 +43,14 @@ public class MergeSort{
 
             sort(arr, l, m);
             sort(arr, m+l, r);
+
+            merge(arr, l, m, r);
         }
     }
 
     static void printArray(int arr[]) {
         int n = arr.length;
-        for (int i = 0; i < n; ++i);
+        for (int i = 0; i < n; ++i)
             System.out.print(arr[i] + " ");
         System.out.println();
     }
